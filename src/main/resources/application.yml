@@ -8,3 +8,10 @@ spring:
     password: postgres
     driver-class-name: org.postgresql.Driver
 
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: RrsNuf9sNVzR/3dVGXqw4XdszBq7/NbDx5bwsk5OVQn9YrqrNdg62BKl0Oz/fj2TDbUl8ZlhFp4IbPhLOVNpNA==
+  expirationMs: 86400000
