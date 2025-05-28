@@ -1,18 +1,22 @@
 package io.github.ashleysaintlouis.userwithrolepostgres.payloads.request;
 
-import io.github.ashleysaintlouis.userwithrolepostgres.models.users.ERole;
-import io.github.ashleysaintlouis.userwithrolepostgres.models.users.Role;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
+
 
 import java.util.Set;
-import java.util.stream.Collectors;
 
-@Getter
-@Setter
 public class SignupRequest {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    private Long id;
+
     @NotBlank
     @Size(min = 6, max = 20)
     private String username;
@@ -24,9 +28,37 @@ public class SignupRequest {
     @Size(min = 8, max = 250)
     private String password;
 
-    private Set<Role> roles;
+    private Set<String> role;
 
-    public Set<ERole> getRole() {
-        return roles.stream().map(Role::getName).collect(Collectors.toSet());
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Set<String> getRole() {
+        return role;
+    }
+
+    public void setRole(Set<String> role) {
+        this.role = role;
     }
 }

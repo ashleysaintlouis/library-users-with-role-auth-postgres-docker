@@ -9,9 +9,13 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   jpa:
+    show-sql: true
     hibernate:
       ddl-auto: update
 
+    properties:
+      hibernate.format_sql: true
+
 jwt:
-  secret: RrsNuf9sNVzR/3dVGXqw4XdszBq7/NbDx5bwsk5OVQn9YrqrNdg62BKl0Oz/fj2TDbUl8ZlhFp4IbPhLOVNpNA==
+  secret: "RrsNuf9sNVzR/3dVGXqw4XdszBq7/NbDx5bwsk5OVQn9YrqrNdg62BKl0Oz/fj2TDbUl8ZlhFp4IbPhLOVNpNA=="
   expirationMs: 86400000
