@@ -1,9 +1,8 @@
 package io.github.ashleysaintlouis.userwithrolepostgres.controllers.auth;
 
 
-import io.github.ashleysaintlouis.userwithrolepostgres.payloads.request.LoginRequest;
-import io.github.ashleysaintlouis.userwithrolepostgres.payloads.request.SignupRequest;
-import io.github.ashleysaintlouis.userwithrolepostgres.payloads.response.JwtResponse;
+import io.github.ashleysaintlouis.userwithrolepostgres.payloads.request.users.LoginRequest;
+import io.github.ashleysaintlouis.userwithrolepostgres.payloads.request.users.SignupRequest;
 import io.github.ashleysaintlouis.userwithrolepostgres.security.services.users.UserService;
 import jakarta.validation.Valid;
 

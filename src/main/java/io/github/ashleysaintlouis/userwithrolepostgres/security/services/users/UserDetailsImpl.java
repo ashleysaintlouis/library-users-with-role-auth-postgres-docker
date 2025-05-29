@@ -1,4 +1,4 @@
-package io.github.ashleysaintlouis.userwithrolepostgres.security.services;
+package io.github.ashleysaintlouis.userwithrolepostgres.security.services.users;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.github.ashleysaintlouis.userwithrolepostgres.models.users.User;

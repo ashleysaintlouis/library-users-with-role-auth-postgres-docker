@@ -1,6 +1,6 @@
 package io.github.ashleysaintlouis.userwithrolepostgres.security.jwt;
 
-import io.github.ashleysaintlouis.userwithrolepostgres.security.services.UserDetailsImpl;
+import io.github.ashleysaintlouis.userwithrolepostgres.security.services.users.UserDetailsImpl;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.*;

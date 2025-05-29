@@ -1,4 +1,4 @@
-package io.github.ashleysaintlouis.userwithrolepostgres.payloads.request;
+package io.github.ashleysaintlouis.userwithrolepostgres.payloads.request.users;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

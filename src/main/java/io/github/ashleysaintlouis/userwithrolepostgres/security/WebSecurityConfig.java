@@ -2,7 +2,7 @@ package io.github.ashleysaintlouis.userwithrolepostgres.security;
 
 import io.github.ashleysaintlouis.userwithrolepostgres.security.jwt.AuthEntryPointJwt;
 import io.github.ashleysaintlouis.userwithrolepostgres.security.jwt.AuthTokenFilter;
-import io.github.ashleysaintlouis.userwithrolepostgres.security.services.UserDetailsServiceImpl;
+import io.github.ashleysaintlouis.userwithrolepostgres.security.services.users.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
